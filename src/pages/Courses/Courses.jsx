@@ -44,7 +44,7 @@ function Courses() {
     const fetchCourses = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/courses/publishedCourses"
+          "/api/courses/publishedCourses"
         );
         setCourses(response.data);
         setLoading(false);
